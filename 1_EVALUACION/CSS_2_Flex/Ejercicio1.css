@@ -1,0 +1,48 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+:root {
+    --alto: 12.5rem;
+}
+
+div.test {
+    background-color: aquamarine;
+    margin-bottom: 30px;
+}
+
+.test ul,
+.test li {
+    padding: 0;
+    list-style: none;
+}
+
+.test ul li {
+    display: block;
+    background-color: red;
+    color: white;
+    /* width: 15%;
+    height: 3rem; */
+    padding: 1rem 5rem;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+
+.test .flexend1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: var(--alto);
+    align-items: flex-end;
+}
+
+.test .flexend2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: var(--alto);
+    align-items: flex-end;
+}

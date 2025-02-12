@@ -1,0 +1,44 @@
+body * {
+    box-sizing: border-box;
+}
+
+.contenedor_externo {
+    font-size: 22px;
+
+    height: 65vh;
+
+    padding: 1em;
+
+    border: thin, solid, black;
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+div.azul {
+    border: thin, dotted, blue;
+    height: 100%;
+}
+
+div.rojo {
+    height: 100%;
+    border: thin, dotted, red;
+}
+
+.contenedor_azul {
+    flex-grow: 2;
+    height: 50%;
+}
+
+.contenedor_rojo {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.azul ol {
+    list-style: upper-roman;
+    padding-inline-start: 0px;
+    list-style-position: inside;
+}

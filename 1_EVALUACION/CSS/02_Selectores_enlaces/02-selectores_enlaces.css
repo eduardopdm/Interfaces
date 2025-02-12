@@ -1,0 +1,27 @@
+div[id^="capa"] {
+    background-color: rgb(168, 230, 230);
+}
+
+/*capa1*/
+
+#capa1 a:hover {
+    background-color: sandybrown;
+}
+
+/*capa2*/
+
+#capa2:hover a {
+    background-color: salmon;
+}
+
+/*capa3*/
+
+#capa3 #google:hover {
+    background-color: darkgoldenrod;
+}
+
+/*capa4*/
+
+#capa4:hover #madrid {
+    background-color: darkkhaki;
+}

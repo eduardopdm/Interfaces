@@ -1,0 +1,99 @@
+.contenedor {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.contenedor header,
+.contenedor footer {
+    background-color: rgb(43, 64, 98);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor footer {
+    flex-direction: row-reverse;
+}
+
+.contenedor a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor .logo a {
+    font-size: xx-large;
+}
+
+.contenedor .links {
+    display: flex;
+}
+
+.contenedor .links a {
+    margin-right: -5;
+    background-color: brown;
+    padding: 1rem;
+}
+
+.contenedor .social {
+    display: flex;
+}
+
+.contenedor .social a {
+    margin-right: -5;
+    background-color: darkorange;
+    padding: 1rem;
+}
+
+.contenedor a:hover {
+    background-color: goldenrod;
+}
+
+.contenedor .main {
+    width: 66%;
+    display: flex;
+}
+
+.contenedor .main article {
+    width: 50%;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    border-bottom-width: black;
+    margin: 1em;
+    padding: 1rem;
+}
+
+.contenedor aside {
+    background-color: darkorange;
+    flex-grow: 1;
+
+    display: flex;
+    flex: 1 1 30%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.contenedor div.widget {
+    /* margin: 1rem; */
+    background-color: orangered;
+    flex-basis: 10rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contenedor div.imagen {
+    background-color: brown;
+    width: 50%;
+    height: 50%;
+}
+
+.contenedor div.arriba {
+    align-self: flex-start;
+}

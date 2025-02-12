@@ -1,0 +1,53 @@
+img {
+    width: 100%;
+}
+
+.azul {
+    margin-left: 1em;
+    color: blue;
+    font-size: x-large;
+}
+
+.tabla {
+    padding: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border-color: black;
+    border-width: 0.1rem;
+    border-style: solid;
+    height: 4em;
+}
+
+section {
+    border-color: black;
+    border-width: 0.2rem;
+    border-style: solid;
+}
+
+.parrafos {
+    padding: 1em;
+    display: flex;
+}
+
+div.izq, div.der {
+    padding: 1em;
+    border-color: black;
+    border-width: 0.1rem;
+    border-style: solid;
+    width: 50%;
+    height: 40em;
+    text-align: center;
+    align-content: center;
+}
+div.izq{
+    margin-right: 0.5em;
+}
+div.der{
+    margin-left: 0.5em;
+}

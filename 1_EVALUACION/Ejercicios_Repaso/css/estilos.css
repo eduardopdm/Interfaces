@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+}
+
+header.encabezado {
+    position: sticky;
+    top: 0;
+    background-color: #c62828;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    z-index: 2;
+}
+
+header.encabezado h1 {
+    font-size: 1.8em;
+}
+
+header.encabezado nav {
+    align-content: center;
+}
+
+header.encabezado ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0;
+}
+
+header.encabezado li {
+    margin: 0.5rem;
+}
+
+header.encabezado a {
+    text-decoration: none;
+    color: white;
+}
+
+section#compras {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#compras .regalo {
+    background-color: #80cbc4;
+    flex: 1 0 25%;
+    justify-items: center;
+    margin: 10px;
+    padding: 15px;
+}
+
+.regalo:hover {
+    transform: scale(1.1);
+}
+
+section#compras .regalo img {
+    width: 400px;
+    height: 300px;
+}
+
+section#compras .regalo p {
+    text-align: center;
+}
+
+section#quien {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#quien .imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+section#quien .imagenes img {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+}
+
+@media(max-width:940px) {
+    section#quien .imagenes {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:650px) {
+    header.encabezado ul {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:520px) {
+    header.encabezado {
+        flex-direction: column;
+    }
+}

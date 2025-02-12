@@ -1,0 +1,52 @@
+/*1*/
+td[colspan="2"],
+td[rowspan="2"] {
+    background-color: green;
+}
+
+td[colspan="3"],
+td[rowspan="3"] {
+    background-color: yellow;
+}
+
+td[colspan="4"],
+td[rowspan="4"] {
+    background-color: brown;
+}
+
+/*2*/
+li[id^="pregunta"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+    list-style-type: circle;
+}
+
+/*3*/
+.negrita {
+    font-weight: bolder;
+}
+
+li[id] span.negrita {
+    background-color: yellow;
+}
+
+span.cursiva {
+    font-style: italic;
+}
+
+/*4*/
+.comentarios {
+    font-style: italic;
+    border: thin, dotted, black;
+    padding: 1em;
+}
+
+/*5*/
+.sin_recuadro+p {
+    text-decoration: underline;
+}
+
+/*6*/
+li>a {
+    background-color: aqua;
+}

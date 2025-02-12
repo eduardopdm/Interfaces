@@ -1,0 +1,25 @@
+* {
+    margin: 1em;
+}
+
+div#container h1 {
+    border: thick, solid, blue;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+div#container h2 {
+    border: thick, solid, grey;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+div#container ul {
+    border: thick, solid, greenyellow;
+    border-radius: 0.5em;
+}
+
+div#container li+li {
+    margin-top: 1.5em;
+}

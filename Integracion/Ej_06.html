@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 6</title>
+    <style>
+        #imagen {
+            width: 500px;
+            height: 500px;
+
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-image: url("img/HTML5.png");
+
+            animation-name: Galeria;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+
+        }
+
+        @keyframes Galeria {
+            from {
+                background-image: url("img/HTML5.png")
+            }
+
+            25% {
+                background-image: url("img/Javascript.png");
+            }
+
+            50% {
+                background-image: url("img/CSS3.png");
+            }
+
+            75% {
+                background-image: url("img/PHP.png");
+            }
+
+            to {
+                background-image: url("img/HTML5.png")
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="imagen"></div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+header,
+main {
+    width: 80%;
+    justify-self: center;
+}
+
+header {
+    height: 8rem;
+    border: medium, solid, black;
+
+    padding: 1em;
+    padding-right: 0;
+
+    margin-bottom: 1rem;
+
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    margin: 0;
+    background-color: lightblue;
+    height: 100%;
+    text-align: right;
+    align-content: center;
+}
+
+main {
+
+    border: thin, solid, black;
+}
+
+main img.logo {
+    float: right;
+    height: 50px;
+    width: 50px;
+}
+
+main {
+    height: 15rem;
+    overflow: auto;
+}

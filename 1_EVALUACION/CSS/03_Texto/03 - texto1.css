@@ -1,0 +1,35 @@
+p:first-of-type {
+    font-style: italic;
+    font-weight: bold;
+    text-indent: 2em;
+}
+
+#consejo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+}
+
+#textolinea {
+
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+
+h3 {
+    color: midnightblue;
+    background-color: coral;
+}
+
+.clase {
+    background-color: aquamarine;
+}
+
+h4.clase {
+    background-color: burlywood;
+}
+
+#idparaestilo {
+    background-color: rgb(159, 159, 159);
+    word-spacing: 0.5em;
+    letter-spacing: 0.2em;
+}

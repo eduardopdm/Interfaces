@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 7</title>
+    <style>
+        #giro {
+            animation-name: Giro;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: none;
+            animation-delay: 0.5s;
+            animation-direction: alternate;
+
+            animation-play-state: paused;
+        }
+
+        #giro:hover {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-play-state: running;
+        }
+
+        @keyframes Giro {
+            0% {
+                transform: translate(0) rotate(0);
+            }
+
+            100% {
+                transform: translate(1000px) rotate(2turn);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/gesto-mano-bien-signo-circulo-dedos_316839-5110.avif" alt="" id="giro">
+</body>
+
+</html>

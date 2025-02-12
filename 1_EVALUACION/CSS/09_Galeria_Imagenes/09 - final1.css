@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+div#galeria {
+    max-width: 40em;
+    width: 50%;
+    border: thin, solid, black;
+    overflow: auto;
+    margin: auto;
+    padding: 0.5em;
+
+}
+
+div#galeria div.caja {
+    border: thin, solid, black;
+    width: calc(33.33% - 1em);
+    height: 10em;
+    float: left;
+    margin: 0.5em
+}
+
+div#galeria div.caja:nth-child(n + 4) {
+    background-color: yellowgreen;
+}
+
+div#galeria div.caja:nth-last-child(-n + 3) {
+    background-color: cornflowerblue;
+}
+
+div#galeria div.caja:nth-child(4n) {
+    display: none;
+}
+
+div#galeria div.caja:nth-child(4n+2) {
+    visibility: hidden;
+}

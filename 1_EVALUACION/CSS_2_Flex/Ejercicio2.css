@@ -1,0 +1,32 @@
+:root {
+    --alto: 12.5rem;
+}
+
+div.test {
+    background-color: aquamarine;
+}
+
+.test ul,
+.test li {
+    padding: 0;
+    list-style: none;
+}
+
+.test ul li {
+    background-color: red;
+    color: white;
+    /* width: 58%;
+    height: 3rem; */
+    padding: 1rem 10rem;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+.test .flexcenter {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 31rem;
+}

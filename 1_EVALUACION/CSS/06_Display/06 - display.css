@@ -1,0 +1,37 @@
+* {
+    border: thin, solid, black;
+}
+
+#negrita {
+    display: block;
+}
+
+.parrafoenlinea {
+    display: inline;
+}
+
+.parrafoenlista {
+    display: list-item;
+    list-style-type: square;
+    margin-left: 2em;
+}
+
+.nomostrar {
+    display: none;
+}
+
+.bloqueenlinea {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+}
+
+.celdadetabla {
+    display: table-cell;
+}
+
+.desplazado {
+    position: relative;
+    right: 2em;
+    top: 2em;
+}

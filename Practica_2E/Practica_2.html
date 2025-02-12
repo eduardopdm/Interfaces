@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <style>
+        .triangle {
+            margin-top: 100px;
+            margin-left: 100px;
+
+            width: 0;
+            height: 0;
+            border: 150px solid transparent;
+            border-top: 0;
+            border-bottom: 300px solid red;
+        }
+
+
+        #imagen {
+
+            animation-name: Giro;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-fill-mode: none;
+
+            animation-direction: normal;
+
+            animation-play-state: running;
+        }
+
+        #imagen:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes Giro {
+            0% {
+                border-bottom: 300px solid red;
+                transform: rotate(0);
+            }
+
+            50% {
+                border-bottom: 300px solid blue;
+                transform: rotate(0.5turn) scale(0.5);
+            }
+
+            100% {
+                border-bottom: 300px solid yellow;
+                transform: rotate(1turn) scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="triangle" id="imagen"></div>
+    <!-- <img src="triangulo_sinfondo.png" id="imagen" alt="Imagen de triangulo animada"> -->
+</body>
+
+</html>

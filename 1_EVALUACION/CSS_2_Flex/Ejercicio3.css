@@ -1,0 +1,34 @@
+.flex-container {
+    background-color: darkblue;
+    max-width: 400px;
+    width: 90%;
+    height: 15rem;
+    margin: 1rem auto;
+    padding: 0;
+    list-style: none;
+    /*                                   */
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-container:nth-child(1) {
+    justify-content: space-around;
+    align-content: center;
+}
+
+.flex-container:nth-child(2) {
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.flex-container .item {
+    background-color: cornflowerblue;
+    border: thin, solid, white;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    color: white;
+}

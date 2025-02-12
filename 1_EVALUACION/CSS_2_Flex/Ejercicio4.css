@@ -1,0 +1,75 @@
+body {
+    background-color: aquamarine;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.test {
+    background-color: darkgrey;
+    margin: 10px;
+    height: 8rem;
+    /*                                     */
+    display: flex;
+    justify-content: space-around;
+}
+
+.test li {
+    background-color: brown;
+    color: white;
+    width: 15%;
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+}
+
+.flexend {
+    align-items: flex-end;
+}
+
+.flexend li:nth-child(3) {
+    align-self: flex-start;
+}
+
+.flexstart {
+    align-items: flex-start;
+}
+
+.flexstart li:nth-child(3) {
+    align-self: center;
+}
+
+.baseline li:nth-child(1) {
+    height: auto;
+    line-height: 2.5rem;
+}
+
+.baseline li:nth-child(2) {
+    height: auto;
+    line-height: 2rem;
+}
+
+.baseline li:nth-child(3) {
+    height: auto;
+    line-height: 5rem;
+}
+
+.baseline li:nth-child(4) {
+    height: auto;
+    line-height: 6.5rem;
+}
+
+.baseline li:nth-child(5) {
+    height: auto;
+    line-height: 1.5rem;
+}
+
+.baseline {
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: wrap;
+}

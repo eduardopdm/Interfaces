@@ -1,0 +1,168 @@
+#cabecera {
+    background-color: darkslateblue;
+    color: white;
+
+    top: 0;
+
+    width: 80%;
+    height: 4rem;
+    justify-self: center;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabecera img {
+    height: 3rem;
+    width: 3rem;
+    display: none;
+}
+
+#cabecera div.elemento_menu {
+    align-content: center;
+}
+
+#cuerpo {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#cuerpo div.envios {
+    background-color: darkslateblue;
+    color: white;
+
+    box-shadow: 0.5rem 0.5rem 0.25rem dimgray;
+
+    border-radius: 1rem;
+
+    height: auto;
+    width: 25%;
+
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#cuerpo div.envios div.envios_cabecera {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cuerpo div.envios h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#cuerpo div.envios img {
+    height: 3rem;
+    width: 3rem;
+}
+
+#cuerpo div.envios div.muestra {
+    background-color: white;
+    color: black;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#cuerpo div.envios div.muestra h3 {
+    width: 100%;
+}
+
+#cuerpo div.envios div.muestra div.muestra_color {
+    background-color: chartreuse;
+    margin-bottom: 1rem;
+    width: 20%;
+}
+
+#cuerpo div.envios div.muestra p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 70%;
+    font-size: smaller;
+}
+
+#cuerpo div.envios p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: larger;
+}
+
+#pie {
+    background-color: tomato;
+
+    width: 99%;
+    height: 3rem;
+    justify-self: center;
+
+    margin: 0;
+
+    bottom: 0;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#pie img {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (max-width:1096px) {
+    #cabecera {
+        width: 100%;
+    }
+
+    #cuerpo {
+        flex-wrap: wrap;
+    }
+
+    #cuerpo div.envios {
+        width: 35%;
+    }
+
+    #pie {
+        position: static;
+    }
+}
+
+@media (max-width:768px) {
+    #cabecera {
+        justify-content: flex-start;
+    }
+
+    #cabecera img {
+        margin-left: 2rem;
+        display: block;
+    }
+
+    #cabecera div.elemento_menu {
+        display: none;
+    }
+
+    #cuerpo {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cuerpo div.envios {
+        width: 75%;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Examen parcial 2ª Evaluación</title>
+	<link rel="stylesheet" href="estilos1.css">
+
+</head>
+
+<body>
+	<!-- Contenedor principal -->
+	<main id="wrapper">
+		<!-- Subcabecera para incluir la imagen -->
+		<nav id="cabecera">
+			<!-- Aquí va la etiqueta picture -->
+			<picture>
+
+				<!-- NO ME FUNCIONA ÉSTE, ESPERO QUE CUENTE LA INTENCIÓN -->
+				<!-- <source media="(min-width: 1200px)" sizes="(mix-width: 1600px)70vw" srcset="img/img_1600.webp 1200w"
+					type="image/webp"> -->
+
+				<source media="(min-width: 1200px)" sizes="(min-width: 1200px)70vw" srcset="img/img_1200.webp 1200w"
+					type="image/webp" alt="Imagen de un hombre con el mapa mundial de fondo">
+
+				<source media="(min-width: 600px)" sizes="(min-width: 1000px)75vw" srcset="img/img_1200.webp 1200w"
+					type="image/webp" alt="Imagen de un hombre con el mapa mundial de fondo">
+
+				<!-- NI ESTE, LO MISMO, ESPERO QUE LA INTENCIÓN CUENTE ALGO -->
+				<source media="(min-width: 600px)" sizes="(max-width: 1000px)85vw" srcset="img/img_800.webp 1000w"
+					type="image/webp" alt="Imagen de un hombre con el mapa mundial de fondo">
+
+				<source srcset="img/img_400.webp" alt="Imagen de un hombre con el mapa mundial de fondo">
+
+				<img src="img/img_800.png" alt="Imagen de un hombre con el mapa mundial de fondo">
+			</picture>
+		</nav>
+
+		<!-- Sección para contenidos audiovisuales -->
+		<section id="multimedia">
+			<!-- Elemento donde se incluye el audio -->
+			<article id="audio" class="caja">
+				<!-- Aquí va la etiqueta audio -->
+				<audio controls="controls" preload autoplay loop>
+
+					<source src="audio/fondo.ogg" type="audio/ogg">
+
+					<source src="audio/fondo.mp3" type="audio/mp3">
+
+				</audio>
+			</article>
+
+			<!-- Elemento donde se incluye el vídeo de YouTube -->
+			<article id="video1" class="caja">
+				<!-- <iframe width="420" height="300" src="https://www.youtube.com/embed/zu9W8AtZy7U"></iframe> -->
+				<!-- Aquí debes modificar los parámetros del vídeo de YouTube -->
+
+				<!-- Tengo loop=1 en la url pero no funciona -->
+				<iframe title="Video de gente aplaudiendo" width="420" height="300"
+					src="https://www.youtube.com/embed/zu9W8AtZy7U?si=3WbjxWuWFY-tFcLe&controls=2&autoplay=1&loop=1&mute=1"
+					allowfullscreen>
+				</iframe>
+			</article>
+		</section>
+
+	</main>
+
+</body>
+
+</html>

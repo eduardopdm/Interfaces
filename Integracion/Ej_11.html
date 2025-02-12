@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 11</title>
+    <style>
+        :root {
+            --caja: 100px;
+            --margen: 10px;
+            --total: 4;
+        }
+
+        #contenedor {
+            border: thin solid black;
+
+            /* height: 450px; */
+            height: calc(var(--caja) * var(--total) + var(--margen) * var(--total) + var(--margen));
+            width: 80%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .caja {
+            background-color: brown;
+
+            position: absolute;
+
+            left: 0px;
+
+            height: var(--caja);
+            width: var(--caja);
+            margin: var(--margen);
+
+            text-align: center;
+            align-content: center;
+            font-weight: bold;
+
+            transition: 2s;
+            transition-timing-function: ease-in-out;
+            /* transition-delay: 0.5s; */
+        }
+
+        .caja:nth-child(1) {
+            top: 0;
+        }
+
+        .caja:nth-child(2) {
+            top: calc(var(--caja) + var(--margen));
+        }
+
+        .caja:nth-child(3) {
+            top: calc(var(--caja) * 2 + var(--margen) * 2);
+        }
+
+        .caja:nth-child(4) {
+            top: calc(var(--caja) * 3 + var(--margen) * 3);
+        }
+
+        .caja:hover {
+            /* transform: scale(0.5) rotate(270deg); */
+            scale: 0.5;
+            rotate: 270deg;
+            background-color: cornflowerblue;
+            color: yellow;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+        <div class="caja">Caja 4</div>
+    </div>
+
+    <button type="button" id="desplazar">Desplazar hacia la derecha e intercalar</button>
+    <button type="button" id="inicial">Volver a la posición inicial</button>
+
+    <script>
+        const desplazar = document.getElementById("desplazar");
+        const inicial = document.getElementById("inicial");
+
+        const contenedor = document.getElementById("contenedor");
+        const cajas = document.getElementsByClassName("caja");
+
+        desplazar.addEventListener("click", () => {
+            let anchoContenedor = contenedor.offsetWidth;
+            let anchoCaja = cajas[0].offsetWidth;
+            let ancho = anchoContenedor - anchoCaja;
+
+            for (let caja of cajas) {
+                caja.style.left = `${ancho - 20}px`;
+            }
+
+            cajas[1].style.top = "0px";
+            cajas[0].style.top = "110px";
+            cajas[3].style.top = "220px";
+            cajas[2].style.top = "330px";
+        });
+
+        inicial.addEventListener("click", () => {
+            for (let caja of cajas) {
+                caja.style.left = "0px";
+            }
+            cajas[0].style.top = "0px";
+            cajas[1].style.top = "110px";
+            cajas[2].style.top = "220px";
+            cajas[3].style.top = "330px";
+        });
+    </script>
+</body>
+
+</html>

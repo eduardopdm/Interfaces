@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Ejercicio 3</title>
+
+    <style>
+        :root {
+            --cuadrado-size: 5rem;
+        }
+
+        .titulo {
+            border: medium solid black;
+            font-size: 3rem;
+            width: 15%;
+            margin-bottom: 5rem;
+        }
+
+        .cuadrado {
+            border: thin solid black;
+            background-color: yellow;
+            height: var(--cuadrado-size);
+            width: var(--cuadrado-size);
+            margin-left: 4rem;
+
+            animation-name: Animacion-cuadrado;
+            animation-duration: 4s;
+            animation-iteration-count: 5;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+
+            animation-play-state: running;
+        }
+
+        .cuadrado:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes Animacion-cuadrado {
+            0% {
+                background-color: yellow;
+                scale: 100%;
+            }
+
+            50% {
+                background-color: red;
+                scale: 200%;
+            }
+
+            100% {
+                background-color: blue;
+                scale: 100%;
+                rotate: 360deg;
+            }
+        }
+
+        #transicion {
+            transition: 2s;
+            transition-delay: 0.5s;
+        }
+
+        #transicion:hover {
+            color: red;
+            box-shadow: 5px 5px gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="titulo" id="transicion">Ejercicio de animaciones</div>
+
+    <div class="cuadrado"></div>
+
+</body>
+
+</html>

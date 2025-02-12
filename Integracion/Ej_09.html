@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 9</title>
+    <style>
+        .giratorio {
+            position: absolute;
+
+            animation-name: Girar;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+            animation-timing-function: linear;
+        }
+
+        @keyframes Girar {
+            0% {
+                left: 90%;
+            }
+
+            100% {
+                left: 0.25em;
+                rotate: -720deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="giratorio">Rotan2</h1>
+</body>
+
+</html>

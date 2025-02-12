@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 8</title>
+    <style>
+        #container {
+            width: 1000px;
+            height: 600px;
+            border: thin solid black;
+            position: relative;
+        }
+
+        #dvd {
+            width: 200px;
+            height: 200px;
+            /* margin: 1px; */
+
+            background-image: url("img/eye_of_the_universe.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            position: absolute;
+
+            top: calc(50% - 100px);
+            left: 0;
+
+            /* top: 50%;
+            transform: translateY(-50%);
+            left: 0; */
+
+            animation-name: Screen;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes Screen {
+
+            25% {
+                top: 0;
+                left: calc(50% - 100px);
+
+                /* top: 0;
+                left: 50%;
+                transform: translateX(-50%); */
+            }
+
+            50% {
+                top: calc(50% - 100px);
+                left: calc(100% - 200px);
+
+                /* top: 50%;
+                transform: translateY(-50%);
+                left: 100%;
+                transform: translateX(-100%); */
+            }
+
+            75% {
+                top: calc(100% - 200px);
+                left: calc(50% - 100px);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="dvd"></div>
+    </div>
+</body>
+
+</html>

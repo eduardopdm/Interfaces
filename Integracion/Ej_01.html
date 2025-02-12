@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 1</title>
+</head>
+
+<body>
+    <!-- <picture>
+        <source media="(min-width: 1200px)" srcset="img/paisaje_grande.jpg" type="image/jpg">
+
+        <source media="(min-width: 800px)" srcset="img/paisaje_mediano.webp" type="image/webp">
+
+        <img src="img/paisaje.jpg" alt="">
+
+    </picture> -->
+
+    <picture>
+        <source media="(min-width: 1200px)" sizes="(min-width: 1600px)70vw" srcset="img/paisaje_grande.jpg 1200w"
+            type="image/jpg">
+
+        <source media="(min-width: 800px)" sizes="(max-width: 600px)70vw" srcset="img/paisaje_mediano.webp 800w"
+            type="image/webp">
+
+        <img src="paisaje.jpg" alt="">
+    </picture>
+</body>
+
+</html>
