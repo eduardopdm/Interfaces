@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa8f2352-4f3d-4d57-8b2d-7124cb23e5e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Eduardo_PerezDeMadrid_Rodriguez_Practica1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Eduardo_PerezDeMadrid_Rodriguez_Practica1/src/main/resources/epdm/eduardo_perezdemadrid_rodriguez_practica1/dynamic-controls.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Luis_Cuadrado_Guerra_Practica1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eduardo_PerezDeMadrid_Rodriguez_Practica1/src/main/java/epdm/eduardo_perezdemadrid_rodriguez_practica1/Practica1App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Eduardo_PerezDeMadrid_Rodriguez_Practica1/src/main/java/epdm/eduardo_perezdemadrid_rodriguez_practica1/Practica1App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eduardo_PerezDeMadrid_Rodriguez_Practica1/src/main/java/epdm/eduardo_perezdemadrid_rodriguez_practica1/Practica1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Eduardo_PerezDeMadrid_Rodriguez_Practica1/src/main/java/epdm/eduardo_perezdemadrid_rodriguez_practica1/Practica1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Luis_Cuadrado_Guerra_Practica1/src/main/java/es/javafx/org/luis_cuadrado_guerra_practica1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Luis_Cuadrado_Guerra_Practica1/src/main/java/es/javafx/org/luis_cuadrado_guerra_practica1/HelloApplication.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2tGYQ1FaPSEjq6TQd6zL8GwcAev" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa8f2352-4f3d-4d57-8b2d-7124cb23e5e5" name="Changes" comment="" />
+      <created>1739979859934</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739979859934</updated>
+      <workItem from="1739979861703" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

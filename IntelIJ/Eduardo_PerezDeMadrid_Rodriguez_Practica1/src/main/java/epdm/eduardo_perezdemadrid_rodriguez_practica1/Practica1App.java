@@ -9,18 +9,27 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Practica1App extends Application {
-    private BorderPane rootLayout;
 
     @Override
     public void start(Stage stage) throws IOException {
+
+        System.out.println(System.getProperty("java.version"));
+        System.out.println(System.getProperty("javafx.version"));
+
         FXMLLoader fxmlLoader = new FXMLLoader(Practica1App.class.getResource("practica1.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        fxmlLoader.setLocation(Practica1App.class.getResource("practica1.fxml"));
+        fxmlLoader.setController(new Practica1Controller());
+
+        BorderPane root = fxmlLoader.load();
+
+        Practica1Controller controller = fxmlLoader.getController();
+        controller.setRootLayout(root);
+
+        Scene scene = new Scene(root);
         stage.setTitle("Hello!");
         stage.setScene(scene);
-
         stage.show();
     }
-
 
 
     public static void main(String[] args) {

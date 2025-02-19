@@ -15,6 +15,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         System.out.println(System.getProperty("java.version"));
         System.out.println(System.getProperty("javafx.version"));
+
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(HelloApplication.class.getResource("hello-view.fxml"));
         fxmlLoader.setController(new HelloController());
